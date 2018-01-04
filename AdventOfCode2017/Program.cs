@@ -7,8 +7,8 @@ namespace AdventOfCode2017
     {
         static void Main(string[] args)
         {
-            var challenge = new Day04();
-            var nIterations = 500;
+            var challenge = new Day05();
+            var nIterations = 10;
 
             var stopWatch = Stopwatch.StartNew();
             stopWatch.Stop(); stopWatch.Reset();
@@ -44,7 +44,7 @@ namespace AdventOfCode2017
             Console.Out.WriteLine("Min: {0}ns, Max: {1}ns, Avg: {1}ns", minNs, maxNs, avgNs);
             Console.Out.WriteLine();
 
-            min = 10000; max = 0; avg = 0;
+            min = long.MaxValue; max = -1; avg = 0;
             result = challenge.Part2(input);
 
             for (var i = 0; i < nIterations; ++i)
