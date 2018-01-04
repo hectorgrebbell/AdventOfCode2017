@@ -2,6 +2,9 @@
 
 namespace AdventOfCode2017
 {
+    /// <summary>
+    /// http://adventofcode.com/2017/day/2
+    /// </summary>
     internal class Day02 : IDay<int, int[][]>
     {
         public int[][] Input
