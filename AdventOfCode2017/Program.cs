@@ -7,7 +7,15 @@ namespace AdventOfCode2017
     {
         static void Main(string[] args)
         {
-            var challenge = new Day19();
+            var challenge = new Day20();
+
+            RunTimed(challenge);
+
+            Console.In.ReadLine();
+        }
+
+        private static void RunTimed<TO,TI>(IDay<TO,TI> challenge)
+        {
             var nIterations = 10;
 
             var stopWatch = Stopwatch.StartNew();
@@ -71,8 +79,6 @@ namespace AdventOfCode2017
 
             Console.Out.WriteLine("Part 2. Result -> {0}", result);
             Console.Out.WriteLine("Min: {0}ns, Max: {1}ns, Avg: {1}ns", minNs, maxNs, avgNs);
-
-            Console.In.ReadLine();
         }
     }
 }
