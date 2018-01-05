@@ -7,7 +7,7 @@ namespace AdventOfCode2017
     {
         static void Main(string[] args)
         {
-            var challenge = new Day21();
+            var challenge = new Day22();
 
             RunTimed(challenge);
 
@@ -16,7 +16,7 @@ namespace AdventOfCode2017
 
         private static void RunTimed<TO,TI>(IDay<TO,TI> challenge)
         {
-            var nIterations = 1000;
+            var nIterations = 10;
 
             var stopWatch = Stopwatch.StartNew();
             stopWatch.Stop(); stopWatch.Reset();
