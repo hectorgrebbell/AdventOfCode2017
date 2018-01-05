@@ -7,8 +7,8 @@ namespace AdventOfCode2017
     {
         static void Main(string[] args)
         {
-            var challenge = new Day15();
-            var nIterations = 5;
+            var challenge = new Day16();
+            var nIterations = 10;
 
             var stopWatch = Stopwatch.StartNew();
             stopWatch.Stop(); stopWatch.Reset();
