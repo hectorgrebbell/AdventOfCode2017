@@ -109,12 +109,12 @@ namespace AdventOfCode2017
             while (waiting <= 2)
             {
                 // task 0
-                if ((waiting & 1) == 0)
+                while ((waiting & 1) == 0)
                 {
                     RunIter(ref t0Pos, lines[t0Pos], t0Queue, t1Queue, t0registers, ref waiting, 0);
                 }
                 // task 1
-                if ((waiting & 2) == 0)
+                while ((waiting & 2) == 0)
                 {
                     t1sent1 += RunIter(ref t1Pos, lines[t1Pos], t1Queue, t0Queue, t1registers, ref waiting, 1);
                 }
