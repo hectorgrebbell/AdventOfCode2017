@@ -7,7 +7,7 @@ namespace AdventOfCode2017
     {
         static void Main(string[] args)
         {
-            var challenge = new Day22();
+            var challenge = new Day23();
 
             RunTimed(challenge);
 
