@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace AdventOfCode2017
 {
@@ -171,7 +167,6 @@ namespace AdventOfCode2017
                     registers[reg] = currVal % otherVal;
                     break;
                 case "rcv":
-                    var retryCount = 0;
                     if (rcv.Count > 0)
                     {
                         var val = rcv.Dequeue();
@@ -179,8 +174,8 @@ namespace AdventOfCode2017
                     }
                     else
                     {
-                        --pos;
                         waiting |= (pid + 1);
+                        return 0;
                     }
                     break;
                 case "jgz":
