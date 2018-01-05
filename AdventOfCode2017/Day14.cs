@@ -4,7 +4,7 @@ using System.Linq;
 namespace AdventOfCode2017
 {
     /// <summary>
-    /// http://adventofcode.com/2017/day/1
+    /// http://adventofcode.com/2017/day/14
     /// </summary>
     internal class Day14 : IDay<int, string>
     {
